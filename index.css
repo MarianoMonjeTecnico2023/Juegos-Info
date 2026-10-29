@@ -1,0 +1,104 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+.lista-juegos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive */
+  gap: 20px;
+}
+
+.juego {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.juego img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.info-juego {
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.info-juego h3 {
+  margin-top: 0; /* Elimina el margen superior del título */
+  text-align: left;
+}
+
+.info-juego p {
+  margin-bottom: 5px; /* Reduce el margen inferior de los párrafos */
+}
+
+.requisitos {
+  margin-top: 10px; /* Agrega un margen superior a los requisitos */
+}
+
+.leer-mas, .ver-mas {
+  color: #007bff; /* Color azul para los enlaces */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Paginación */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-container button,
+.pagination-container span {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.pagination-container button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
